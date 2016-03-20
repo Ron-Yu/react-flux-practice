@@ -1,23 +1,14 @@
-<head>
-    <script src="https://fb.me/react-0.14.7.js"
-        integrity="sha384-xQae1pUPdAKUe0u0KUTNt09zzdwheX4VSUsV8vatqM+t6X7rta01qOzessL808ox"
-        crossorigin="anonymous"></script>
-    <script src="https://fb.me/react-dom-0.14.7.js"
-        integrity="sha384-A1t0GCrR06cTHvMjaxeSE8XOiz6j7NvWdmxhN/9z748wEvJTVk13Rr8gMzTUnd8G"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
-</head>
-<body>
-
-</body>
-
-<script type="text/jsx">
-    // define a react component class
-    var HelloWorld = React.createClass({});
-
-    // ask react to render this class
-    var element = React.createElement(HelloWorld);
-
-    // when we ask react to render this class, we will tell it where to place the
-    // rendered element in the dom
-</script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>React and Flux</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://fb.me/react-0.13.0.js"></script>
+    </head>
+    <body>
+        <section id="forum"></section>
+        <script src="js/components/Forum.react.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
