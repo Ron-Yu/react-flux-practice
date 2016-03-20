@@ -1,0 +1,23 @@
+{
+  "name": "react-flux-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel js -d lib --presets react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ron-Yu/react-flux-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ron-Yu/react-flux-practice/issues"
+  },
+  "homepage": "https://github.com/Ron-Yu/react-flux-practice#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-react": "^6.5.0"
+  }
+}
