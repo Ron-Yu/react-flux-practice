@@ -1,4 +1,4 @@
 React.render(
-    React.creatElement(Forum, null),
+    React.createElement(Forum, null),
     document.getElementById('forum')
 );
