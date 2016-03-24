@@ -1,11 +1,19 @@
 var ForumAnswers = React.createClass({
+
+    _onMarkCorrect: function (id) {
+        ForumDispatcher.dispatch({
+            actionType: 'FORUM_ANSWER_MARKED_CORRECT',
+            id: id
+        });
+    },
+
     render: function () {
         var allAnswers = this.props.allAnswers;
         var answers = [];
 
         for (var key in allAnswers) {
             if (allAnswers.hasOwnProperty(key)) {
-                answers.push(<ForumAnswer key={key} id ={key} answer={allAnswers[key]} />)
+                answers.push(<ForumAnswer key={key} id ={key} answer={allAnswers[key]} onMarkCorrect={ this._onMarkCorrect } />)
             }
         }
 
