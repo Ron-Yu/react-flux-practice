@@ -51,13 +51,11 @@ ForumStore.markAsCorrect = function (id) {
 ForumDispatcher.register(function(action) {
 
     switch(action.actionType) {
-        case 'FORUM_ANSWER_ADDED': {
-            console.log('answer added');
+        case ForumConstants.FORUM_ANSWER_ADDED: {
             ForumStore.addAnswer(action.newAnswer);
             break;
         }
-        case 'FORUM_ANSWER_MARKED_CORRECT': {
-            console.log('answer marked correct');
+        case ForumConstants.FORUM_ANSWER_MARKED_CORRECT: {
             ForumStore.markAsCorrect(action.id);
             break;
         }
